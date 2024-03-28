@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Лабораторна робота №1</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Виконав студент групи АнД-31 Устименко В. М.</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Варіант 10</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header><ion-card-title>Завдання 1</ion-card-title></ion-card-header>
+    <ion-card-content>
+      <p>Задано три числа. Знайти кількість тих з них, які кратні 27.</p>
+      <ion-item>
+        <ion-input label="Перше число:" type="number" #InputA></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Друге число:" type="number" #InputB></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Третє число:" type="number" #InputC></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="Result(InputA.value, InputB.value, InputC.value)">Знайти</ion-button>
+      <ion-item>
+        <p>Результат: {{d}}</p>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Лабораторна робота №1</ion-title>
+  </ion-toolbar>
+</ion-footer>
